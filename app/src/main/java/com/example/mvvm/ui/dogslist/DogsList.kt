@@ -15,7 +15,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
-class DogsListFragment : Fragment() {
+class DogsList : Fragment() {
     private lateinit var binding: ContentDogsListBinding
     private val viewModel: DogsViewModel by viewModels()
     private val dogsAdapter = DogsAdapter()
