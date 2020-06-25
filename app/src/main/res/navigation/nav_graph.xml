@@ -8,10 +8,19 @@
     <fragment
         android:id="@+id/dogsList"
         android:name="com.example.mvvm.ui.dogslist.DogsList"
-        android:label="DogsList" />
+        android:label="DogsList" >
+    </fragment>
+
     <fragment
         android:id="@+id/login"
         android:name="com.example.mvvm.ui.login.Login"
-        android:label="Login" />
+        android:label="Login" >
+        <action android:id="@+id/actionSkip"
+            app:destination="@id/dogsList"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
 
 </navigation>
