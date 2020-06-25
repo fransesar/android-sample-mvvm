@@ -1,5 +1,7 @@
 package com.example.mvvm.ui.dogslist
 
+import android.R
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,8 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvm.databinding.ContentDogsListBinding
 import dagger.hilt.android.AndroidEntryPoint
 
+
 @AndroidEntryPoint
-class DogsList : Fragment() {
+class DogsListFragment : Fragment() {
     private lateinit var binding: ContentDogsListBinding
     private val viewModel: DogsViewModel by viewModels()
     private val dogsAdapter = DogsAdapter()
